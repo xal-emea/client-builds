@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name='viewport' content='initial-scale=1,user-scalable=no'>
+		<title>Aperol Spritz</title>
+		<link rel='stylesheet' href='styles/style.css'>
+		<script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+	</head>
+
+	<body onload='EB.init();'>
+		<div id='wrapper'>
+			<div id='container'>
+				<div id="boxWidth">
+					<img src="./img/t1.png" id="t1">
+					<img src="./img/l1.png" id="l1">
+					<img src="./img/l2.png" id="l2">
+					<img src="./img/t2.png" id="t2">
+					<img src="./img/t3.png" id="t3">
+					<div id="glow"></div>
+					<img src="./img/drink.png" id="drink">
+					<img src="./img/cta1.png" id="cta">
+					<img src="./img/legal.png" id="legal" />
+
+					<!-- Bubbles -->
+					<img src="./img/bub1.png" id="b1">
+					<img src="./img/bub2.png" id="b2">
+					<img src="./img/bub2.png" id="b3">
+					<img src="./img/bub1.png" id="b4">
+					<img src="./img/bub1.png" id="b5">
+					<img src="./img/bub2.png" id="b6">
+					<img src="./img/bub2.png" id="b7">
+					<img src="./img/bub1.png" id="b8">
+				</div>
+			</div>
+		</div>
+
+		<script type='text/javascript' src='scripts/script.js'></script>
+		<script type="text/javascript">
+			var cont = document.getElementById('container'),
+					t1 = document.getElementById('t1'),
+					t2 = document.getElementById('t2'),
+					t3 = document.getElementById('t3'),
+					l1 = document.getElementById('l1'),
+					l2 = document.getElementById('l2'),
+					b1 = document.getElementById('b1'),
+					b2 = document.getElementById('b2'),
+					b3 = document.getElementById('b3'),
+					b4 = document.getElementById('b4'),
+					b5 = document.getElementById('b5'),
+					b6 = document.getElementById('b6'),
+					b7 = document.getElementById('b7'),
+					b8 = document.getElementById('b8'),
+					glow = document.getElementById('glow'),
+					cta = document.getElementById('cta'),
+					legal = document.getElementById('legal'),
+					drink = document.getElementById('drink');
+
+			setTimeout(function() {
+				t1.className = "anim";
+				b1.className = "anim";
+				b2.className = "anim";
+				b7.className = "anim";
+				b8.className = "anim";
+			}, 10);
+
+			setTimeout(function() {
+				t1.className = "";
+			}, 800);
+
+			setTimeout(function() {
+				l1.className = "anim";
+				b3.className = "anim";
+				b4.className = "anim";
+				b5.className = "anim";
+				b6.className = "anim";
+			}, 1200);
+
+			setTimeout(function() {
+				l1.className = "";
+				l2.className = "anim";
+			}, 1250);
+
+			setTimeout(function() {
+				l2.className = "";
+				l1.className = "anim";
+			}, 1300);
+
+			setTimeout(function() {
+				l1.className = "";
+				l2.className = "anim";
+			}, 1350);
+
+			setTimeout(function() {
+				l2.className = "";
+				l1.className = "anim";
+			}, 1400);
+
+			setTimeout(function() {
+				l1.className = "";
+				l2.className = "anim";
+			}, 1450);
+
+			setTimeout(function() {
+				l2.className = "anim2";
+				glow.className = "anim";
+				drink.className = "anim";
+				legal.className = "anim";
+				t2.className = "anim";
+				t3.className = "anim";
+			}, 2800);
+
+			setTimeout(function() {
+				t2.className = "";
+				t3.className = "";
+			}, 4700);
+
+			setTimeout(function() {
+				cta.className = "anim";
+			}, 4800);
+
+			setTimeout(function() {
+				b1.className = "";
+				b2.className = "";
+				b3.className = "";
+				b4.className = "";
+				b5.className = "";
+				b6.className = "";
+				b7.className = "";
+				b8.className = "";
+			}, 5e3);
+		</script>
+	</body>
+</html>
